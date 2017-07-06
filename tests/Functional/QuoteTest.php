@@ -19,7 +19,7 @@ class QuoteTest extends BaseTestCase
     public function testQuoteClientFailsForInvalidCategory(){
         try{
             $quote = new \Quote("Invalid Category", null);
-            $this->fail("Shouldn't have come here...");
+            $this->fail("Shouldn't have come here.");
         }catch(\Exception $e){
             // expected
         }
